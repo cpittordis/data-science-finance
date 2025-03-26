@@ -1,0 +1,30 @@
+General information:
+  version: 0.7
+  name: Loan Defaults Prediction Project
+  purpose: Predicting if a loan is going to default or not
+  date: auto
+  contributors: Charalambos Pittordis
+  description: This work is a data science project that tries to predict if an invidual receiving a loan is going to end up into a loan default or not based on multiple features related to loan_amount, annual_income, purpose of loan and home_ownership status.
+  source code: TBC, on github
+
+Dataset information:
+  path: https://www.kaggle.com/datasets/wordsforthewise/lending-club
+  origin: All Lending Club Loan Data
+  description: 2007 through current Lending Club accepted and rejected loan data
+  depth: from 2007 to current date
+  perimeter: only residential sales
+  target variable: loan_default
+  target description: loan default = [True, False]
+
+Data Preparation:
+  variable filetring: All variables containing outliers and those that required special knowledge or previous calculations for their use were removed
+  missing values: were replaced by the mean of their columns during feature engineering
+  Feature engineering: No feature was created. All features were selected carefully, numerical features tranformed via StandardScaler whith Categorical features tranfromed via OneHotEncoding. Also applied Synthetic Minority Oversampling Technique (SMOTE) to handle over-sampling minorities within the OneHotEncoded categorical features i.e., classes underrepresented for purpose such as wedding and school.
+  Path to script: TBC/ on github
+
+Model training:
+  Used algorithm: We used a XGBClassifier algorithm (XGBoost) but this model could be challenged with other interesting models such as LogisticsRegression, and Keras Deep Learning Neural Networks.
+  Parameters choice: We did perform hyperparameter optimisation via GridSearchCV and chose to use `n_estimators=200`, `max_depth=12`, `learning_rate=0.1`, `enable_categorical=True`; as these parameters gave a good AUC-ROC score and no overfitting.
+  Metrics: Accuracy, Precision, Recall (Sensitivity), F1-Score, ROC-AUC, Confusion Matrix
+  Validation strategy: We splitted our data into train (80%) and test (2%)
+  Path to script: TBC, on github
