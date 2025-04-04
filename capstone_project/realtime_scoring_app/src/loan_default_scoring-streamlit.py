@@ -30,7 +30,7 @@ str_dt = datetime.datetime.now().strftime('%Y-%m-%d') ## String on DateTime in f
 fig = go.Figure()
 
 # Title
-st.title("Lending CLub - Loan Default Scoring App")
+st.title("Lending Club - Loan Default Scoring App")
 st.header(f"Date : {str_dt}" , divider="rainbow")
 
 # Display site header
@@ -43,6 +43,33 @@ except FileNotFoundError:
     st.error(f"Image not found at {image_path}. Please check the file path.")
 
 path_python_material = ".." # REPLACE WITH YOUR PATH
+
+st.markdown("""
+# Objective
+## Predict if applicant will **Loan Default.**
+- **Defaulted Loan:** A loan is considered in default when the borrower fails to make the required payments as agreed in the loan contract. 
+    Default typically occurs after missing several payments (usually 90 to 180 days, depending on the type of loan and lender policies).
+            
+- **A loan is charged off** when the lender writes off the loan as a bad debt on their financial statements, recognizing it as a loss. 
+    This typically happens after the loan has been in default for a significant period, often around 180 days.
+---
+## **The Loan Default Predictor:**
+- Predicting if a applicants, if granted a loan will leads to a loan default or not.
+---
+            
+- **Loan Default = False :** Applicant will repay back the loan -> *Lending Club Financial Gain !*
+    - This will be provided with a percentage of how likely a applicant will have classed as Loan Default = False
+    - Higher the percentage, lower the risk
+            
+---
+
+- **Loan Default = True :** Applicant will NOT repay back the loan -> *Lending Club Financial Loss !*
+    - This will be provided with a percentage of how likely a applicant will have classed as Loan Default = True  
+    - Higher the percentage, higher the risk    
+
+---  
+
+""")
 
 # Select Loan Default Model
 st.header("Select Loan Default Predictor", divider=True)
@@ -69,7 +96,7 @@ if model:
     log_fico_range_high	=st.number_input('FICO Range High \n ( The lower boundary range the borrower’s FICO at loan origination belongs to. )')
     log_total_acc	=st.number_input('Total Acc ( The total number of credit lines currently in the borrowers credit file )')
     log_total_bc_limit	=st.number_input('Total Banck Card Limit ( Total bankcard high credit/credit limit )')
-    log_int_rate_num	=st.number_input('int_rate_num', min_value=0.001)
+    log_int_rate_num	=st.number_input('Interest Rate %', min_value=1.0)
 
     dti	=st.number_input('dti ( A ratio calculated using the borrowers total monthly debt payments on the total debt obligations, excluding mortgage and the requested LC loan, divided by the borrowers self-reported monthly income. )')
 
@@ -159,7 +186,7 @@ if model:
             "log_fico_range_high" :   np.log1p(log_fico_range_high),
             "log_total_acc"	   :      np.log1p(log_total_acc),	  
             "log_total_bc_limit" :    np.log1p(log_total_bc_limit),
-            "log_int_rate_num" : np.log1p(log_int_rate_num),
+            "log_int_rate_num" : np.log10((log_int_rate_num)/100),
 
 
 
@@ -238,6 +265,9 @@ if model:
         feature_names = load_model.feature_names_in_
         
         st.header(f"Feature Importance Chart", divider=True)
+        st.markdown("""
+        #### Showing which selection/choices have the biggest impact on the Final prediction
+            """)
         df_features = pd.DataFrame(np.abs(importance), columns=feature_names)
         st.bar_chart(df_features, stack=False)
 
@@ -258,6 +288,9 @@ if model:
         feature_names = load_model.feature_names_in_
         
         st.header(f"Feature Importance Chart", divider=True)
+        st.markdown("""
+        #### Showing which selection/choices have the biggest impact on the Final prediction
+            """)
         df_features = pd.DataFrame(importance, columns=feature_names, index=[0])
         st.bar_chart(df_features, stack=False)
     

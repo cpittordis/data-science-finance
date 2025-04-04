@@ -1,9 +1,10 @@
 # Data Science Finance - Capstone Project
 - Client: Lending Club
 - Project: Data Cleaning, Exploratory Data Analysis, and Predictive Modeling on Loan Application Dataset
-- 
+
+
 <p align="center">
-<img src="images/Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg" width="800" />
+<img src="images/Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg" width="600" />
 </p>
 
 
@@ -59,6 +60,18 @@ A data dictionary is provided LCDataDictionary.xlsx
 
 ---
 
+## Visual Architecture of Capstone Project - Lending Club
+
+<p align="center">
+<img src="images/architecture_capstone_project_lendingclub_scoring.png" width="1000" />
+</p>
+
+
+---
+
+## [Capstone Project - Notebook](capstone_project.ipynb)
+The notebook encompasses the full curation of building AI/ML Loan Default Predictor Models. Below is the Notebook structure/steps taken to getting the models into deployment.
+
 ### **Notebook Structure:**
 0. Import/Ingest Lending Club Data
 
@@ -82,5 +95,15 @@ A data dictionary is provided LCDataDictionary.xlsx
 5. Save Models for Deployment
 
 **Insights & Conclusions**
+
+## [Lending Club - Loan Default Scoring App](realtime_scoring_app/src/loan_default_scoring-streamlit.py)
+#### This is a Streamlit App, which allows Business End Users at the Lending Club Company to fill in the profile of a potential applicant who is applying for a loan, and predict if they will end up defaulting a loan taken by the Lending Club or not. This results in a percentage value, showing the risk of a Loan Default potentially occuring, also with acomanied which a bar chart showing which selection(s) influence the prediction the most.
+
+To launch the streamlit application
+- Step 1: Open Command Prompt
+- Step 2: Go to path directory of where [Real-Time Loan Default Scoring App](realtime_scoring_app/src/loan_default_scoring-streamlit.py) is located
+- Step 3: Execute the application via the command
+    - streamlit run [Real-Time Loan Default Scoring App.py](realtime_scoring_app/src/loan_default_scoring-streamlit.py)
+
 
 
