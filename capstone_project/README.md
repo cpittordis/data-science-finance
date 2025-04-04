@@ -3,9 +3,9 @@
 - Project: Data Cleaning, Exploratory Data Analysis, and Predictive Modeling on Loan Application Dataset
 
 ![Alt text](images/Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg)
-
-<img src="images/Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg" width="300" />
-
+<p align="center">
+<img src="images/Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg" width="800" />
+</p>
 ---
 ## Project Overview
 
