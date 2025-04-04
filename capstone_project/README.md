@@ -1,6 +1,9 @@
 # Data Science Finance - Capstone Project
-- Client: Lending Club*
+- Client: Lending Club
 - Project: Data Cleaning, Exploratory Data Analysis, and Predictive Modeling on Loan Application Dataset
+
+![Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2](https://github.com/user-attachments/assets/d2201610-40aa-49bb-a85e-27fd6ab03cbc)
+<img src="[Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2](https://github.com/user-attachments/assets/d2201610-40aa-49bb-a85e-27fd6ab03cbc)" width="300" />
 
 ---
 ## Project Overview
@@ -77,5 +80,5 @@ A data dictionary is provided LCDataDictionary.xlsx
 5. Save Models for Deployment
 
 **Insights & Conclusions**
-![Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2](https://github.com/user-attachments/assets/d2201610-40aa-49bb-a85e-27fd6ab03cbc)
+
 
