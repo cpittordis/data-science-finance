@@ -77,5 +77,5 @@ A data dictionary is provided LCDataDictionary.xlsx
 5. Save Models for Deployment
 
 **Insights & Conclusions**
+![Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2](https://github.com/user-attachments/assets/d2201610-40aa-49bb-a85e-27fd6ab03cbc)
 
-![plot](https://github.com/cpittordis/data-science-finance/edit/main/capstone_project/images/imagesFlux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg)
