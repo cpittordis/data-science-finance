@@ -2,8 +2,9 @@
 - Client: Lending Club
 - Project: Data Cleaning, Exploratory Data Analysis, and Predictive Modeling on Loan Application Dataset
 
-![Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2](https://github.com/user-attachments/assets/d2201610-40aa-49bb-a85e-27fd6ab03cbc)
 ![Alt text](images/Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg)
+
+<img src="images/Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg" width="100" />
 
 ---
 ## Project Overview
