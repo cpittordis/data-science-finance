@@ -4,7 +4,7 @@
 
 ![Alt text](images/Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg)
 
-<img src="images/Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg" width="100" />
+                        <img src="images/Flux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg" width="300" />
 
 ---
 ## Project Overview
