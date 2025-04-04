@@ -78,4 +78,4 @@ A data dictionary is provided LCDataDictionary.xlsx
 
 **Insights & Conclusions**
 
-![plot](../capstone_project/images/imagesFlux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg)
+![plot](https://github.com/cpittordis/data-science-finance/edit/main/capstone_project/images/imagesFlux_Dev_Create_a_image_of_for_a_sophisticated_Loan_Default_Ap_2.jpeg)
