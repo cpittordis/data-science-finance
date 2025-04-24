@@ -6,7 +6,7 @@
 | v1      | Initial release. Basic functionality implemented.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | v2      | Upgrading Streamlit application by adding interactive visualizations.<br>Including a feature importance graph to help users understand which features are most influential in predicting fraud.<br>Implementing real-time confidence intervals to display the model's prediction uncertainty. <br>Integrating SHAP (SHapley Additive exPlanations) into the application to provide explanations for each prediction. <br>Displaying SHAP values for individual transactions so that users can see which features contributed to the prediction. |
 | v3      | Modified FastAPI application to handle real-time data streams.<br>Implemented a feature that allows the model to continuously score incoming transactions from a simulated real-time data source (csv in target)                                                                                                                                                                                                                                                                                                                                 |
-| v4  (Charalambos Pittordis Edits)    | Uploading .CSV file(s), a new feature (transaction_amount_to_balance_ratio) is created automatically, and predictions can be made on the entire uplaoded file in one go (file with predictions downloadable), including their confidence counterpart (i.e., probability of scoring 0 or 1 for each record). This follows with a interactive scatter plot where the themes, colours, features, hues can be chosen. The additional sections utilises SHAPASH, allowing for interactive feature importances and presenting the model peformance and numerical contributions to each feature for each records (file with feature contributions downloadable). The last section contains <Manual scoring of individual transactions> the flexibilty of a user to place in bespoke values for transaction_amount, customer_age, customer_balance returning a prediction value with visuals. |
+| v4  <!--(Charalambos Pittordis Edits)-->    | Uploading .CSV file(s), a new feature (transaction_amount_to_balance_ratio) is created automatically, and predictions can be made on the entire uplaoded file in one go (file with predictions downloadable), including their confidence counterpart (i.e., probability of scoring 0 or 1 for each record). This follows with a interactive scatter plot where the themes, colours, features, hues can be chosen. The additional sections utilises SHAPASH, allowing for interactive feature importances and presenting the model peformance and numerical contributions to each feature for each records (file with feature contributions downloadable). The last section contains <Manual scoring of individual transactions> the flexibilty of a user to place in bespoke values for transaction_amount, customer_age, customer_balance returning a prediction value with visuals. |
 
 # 1. Running the app
 
@@ -52,7 +52,7 @@ Integrating SHAP (SHapley Additive exPlanations) into the application to provide
 Displaying SHAP values for individual transactions so that users can see which features contributed to the prediction
 
 
- 
+<!-- 
 --- 
 # 2. Assignment Instructions
 
@@ -147,3 +147,4 @@ a. **Dataset Selection**:
   h. **Save Predictions**:
 * Allow users to download the fraud prediction results as a CSV file.
 * Include an option for users to choose the location where the file will be saved locally.
+-->

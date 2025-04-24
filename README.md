@@ -24,11 +24,15 @@ Work Consists of utilising advanced analytics, Machine Learning, Deep Learning f
 ---
 ### [Time-Series Forecasting](notebooks/assignment5_timeseries_forecasting.ipynb)
 
-4\. Final Project - Building real-time loan scoring application via Streamlit with FastAPI back-End.
+4\. Building Fraud Detection application via Streamlit with FastAPI back-End.
+---
+### [Fraud Detection Application](notebooks/assignment6_build_app/app-v4)
+
+5\. Final Project - Building real-time loan scoring application via Streamlit with FastAPI back-End.
 ---
 ### [Real-Time Loan Scoring Application](capstone_project)
 
-5\. Data Architecture of Lending Club Scoring System
+Data Architecture of Lending Club Scoring System
 <p align="center">
 <img src="images/assignment7_architecture_diagram_lendingclub_scoring_system.png" width="800" />
 </p>
